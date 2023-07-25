@@ -1,0 +1,32 @@
+* {
+    --main: #002654;
+
+    --theme-tone-0: #002654;
+    --theme-tone-1: #003a80;
+    --theme-tone-2: #0056b3;
+    --theme-tone-3: #0073e6;
+    --theme-tone-4: #0088ff;
+    --theme-tone-5: #3399ff;
+    --theme-tone-6: #66aaff;
+    --theme-tone-7: #99bbff;
+    --theme-tone-8: #cce5ff;
+    --theme-tone-9: #e6f2ff;
+
+    --bw-tone-0: #ffffff;
+    --bw-tone-1: #dddddd;
+    --bw-tone-2: #bbbbbb;
+    --bw-tone-3: #999999;
+    --bw-tone-4: #777777;
+    --bw-tone-5: #555555;
+    --bw-tone-6: #333333;
+    --bw-tone-7: #111111;
+    --bw-tone-8: #000000;
+}
+
+html {
+    background-color: var(--theme-tone-9);
+}
+
+a {
+    text-decoration: none;
+}
