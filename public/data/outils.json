@@ -1,0 +1,95 @@
+{
+    "date": "2023-07-26T00:19:00.000Z",
+    "tools": [
+        {
+            "name": "Légifrance",
+            "url": "https://www.legifrance.gouv.fr",
+            "id": "legifrance",
+            "category": "Information légale",
+            "official": true,
+            "author": "Etat français",
+            "description": "Base de données des lois françaises",
+            "logo_format": "svg"
+        },
+        {
+            "name": "service-public.fr",
+            "url": "https://www.service-public.fr",
+            "id": "service-public",
+            "category": "Information",
+            "official": true,
+            "author": "Etat français",
+            "description": "Toutes les informations sur vos démarches et vos droits",
+            "logo_format": "svg"
+        },
+        {
+            "name": "data.gouv.fr",
+            "url": "https://www.data.gouv.fr",
+            "id": "data-gouv",
+            "category": "Données",
+            "official": true,
+            "author": "Etat français",
+            "description": "Portail de toutes les données open-source des institutions et administrations françaises",
+            "logo_format": "svg"
+        },
+        {
+            "name": "vie-publique.fr",
+            "url": "https://www.vie-publique.fr",
+            "id": "vie-publique",
+            "category": "Information",
+            "official": true,
+            "author": "Etat français",
+            "description": "Toutes les informations sur les débats publics et des clés pour les comprendre",
+            "logo_format": "svg"
+        },
+        {
+            "name": "data.europa.eu",
+            "url": "https://data.europa.eu/fr",
+            "id": "europe",
+            "category": "Données",
+            "official": true,
+            "author": "Commission européenne",
+            "description": "Portail de toutes les données open-source des institutions et administrations européennes",
+            "logo_format": "svg"
+        },
+        {
+            "name": "Socle interministériel de logiciels libres",
+            "url": "https://sill.code.gouv.fr",
+            "id": "sill",
+            "category": "Logiciels",
+            "official": true,
+            "author": "Etat français",
+            "description": "Liste des logiciels libres recommandés et utilisés par l'administration française",
+            "logo_format": "svg"
+        },
+        {
+            "name": "Cadastre",
+            "url": "https://cadastre.data.gouv.fr/map",
+            "id": "cadastre",
+            "category": "Données",
+            "official": true,
+            "author": "Etat français",
+            "description": "Accédez aux parcelles cadastrales de France",
+            "logo_format": "svg"
+        },
+        {
+            "name": "géoportail",
+            "url": "https://www.geoportail.gouv.fr",
+            "id": "geoportail",
+            "category": "Carte",
+            "official": true,
+            "author": "Etat français",
+            "description": "Accédez à toutes les cartes de France",
+            "logo_format": "svg"
+        },
+        {
+            "name": "L'annuaire des entreprises",
+            "url": "https://annuaire-entreprises.data.gouv.fr",
+            "id": "annuaire-entreprises",
+            "category": "Données",
+            "official": true,
+            "author": "Etat français",
+            "description": "Accédez à toutes les informations sur les entreprises françaises",
+            "logo_format": "svg"
+        }
+    ]
+}
