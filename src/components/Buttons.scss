@@ -1,0 +1,15 @@
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    border: 0;
+}
+
+.search-button svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    fill: var(--bw-tone-6);
+}

@@ -8,7 +8,8 @@
 
         width: 100%;
         height: 80px;
-        background-color: var(--bw-tone-1);
+        padding-bottom: 10px;
+        background-color: var(--bw-tone-3);
 
         & ul {
             display: grid;
@@ -31,17 +32,21 @@
             width: 100%;
             height: 100%;
 
-            color: var(--bw-tone-5);
+            color: var(--bw-tone-6);
         }
 
         & li a svg {
             width: 2.5rem;
             height: 2.5rem;
-            fill: var(--bw-tone-5);
+            fill: var(--bw-tone-6);
         }
     }
 
-    nav.tabs {
+    nav.filters {
+        border-bottom: .5px solid var(--bw-tone-2);
+        position: relative;
+        transform: translate(0); // for search button fixation
+
         & ul {
             display: flex;
             flex-direction: row;
@@ -49,23 +54,108 @@
             align-items: center;
             flex-wrap: nowrap;
 
-
-            width: 100%;
-            margin: 0; padding: 1em 0;
+            position: relative;
+            width: calc(100% - 3em);
+            margin: 0; padding: 1em 3em 1em 0;
             overflow-x: scroll;
         }
 
         & li {
             list-style: none;
-            background-color: var(--bw-tone-4);
-
-            width: auto;
-            margin: 0 5px;
-            padding: 5px 10px;
-            border-radius: 2em;
 
             & a {
-                color: white;
+                display: block;
+                width: auto;
+                white-space: nowrap;
+                
+                margin: 0 5px;
+                padding: 5px 10px;
+                border-radius: 2em;
+                border: 1px solid var(--bw-tone-6);
+                background-color: var(--bw-tone-1);
+                color: var(--bw-tone-6);
+
+                &.active {
+                    border: 1px solid var(--bw-tone-1);
+                    background-color: var(--bw-tone-6);
+                    color: var(--bw-tone-1);
+                }
+            }
+        }
+
+        & .search-button {
+            position: fixed;
+            top: 50%; right: 0;
+            transform: translateY(-50%);
+            width: 3em; height: 3em;
+            margin: 0; padding: 0;
+            background-color: var(--bw-tone-1);
+
+            &::before {
+                content: '';
+                pointer-events: none;
+                display: block;
+                position: absolute; top: 0; right: 3em; z-index: -1;
+                width: 100%; height: 100%;
+                background: linear-gradient(90deg, transparent 0%, var(--bw-tone-1) 100%);
+            }
+        }
+    }
+    
+    nav.tabs {
+
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        padding: 1em 0 0 0;
+        background-color: var(--bw-tone-2);
+
+        & ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+
+            width: 100%; height: 100%;
+            margin: 0; padding: 0;
+        }
+
+        & li {
+            list-style: none;
+        }
+
+        & li a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            width: 100%; min-width: 80px;
+            height: 100%;
+            position: relative;
+
+            padding-bottom: 10px;
+
+            color: var(--bw-tone-5);
+
+            &.active::after {
+                content: '';
+
+                display: block;
+                position: absolute; bottom: 0; left: 50%;
+                transform: translateX(-50%);
+                width: 50px;
+                height: 4px;
+                border-radius: 2em 2em 0 0;
+
+                background-color: var(--bw-tone-5);
+            }
+
+            & svg {
+                width: 2rem;
+                height: 2rem;
+                fill: var(--bw-tone-5);
             }
         }
     }

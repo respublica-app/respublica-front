@@ -18,8 +18,34 @@
       "sizes": "512x512"
     }
   ],
+  "shorcuts": [
+    {
+      "name": "Flux",
+      "short_name": "Flux",
+      "description": "Flux des actualités et lois",
+      "url": "/"
+    },
+    {
+      "name": "Politoscope",
+      "short_name": "Politoscope",
+      "description": "Annuaire des membres des institutions",
+      "url": "/politoscope"
+    },
+    {
+      "name": "Participer",
+      "short_name": "Participer",
+      "description": "Débattez et votez sur les lois",
+      "url": "/participer"
+    },
+    {
+      "name": "Outils",
+      "short_name": "Outils",
+      "description": "Outils et sites pratiques",
+      "url": "/outils"
+    }
+  ],
   "start_url": ".",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#002654",
-  "background_color": "#ffffff"
+  "background_color": "#e6f2ff"
 }

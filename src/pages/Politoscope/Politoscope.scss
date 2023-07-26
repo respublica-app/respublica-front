@@ -1,0 +1,61 @@
+.politicians-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    width: calc(100% - 2em);
+    height: 100%;
+
+    padding: 1em;
+    overflow-y: scroll;
+}
+
+.politician-card {
+    background-color: var(--bw-tone-1);
+    border-radius: 1em;
+    box-shadow: 0 0 1em var(--bw-tone-4);
+
+    margin: 1em; padding: 1em;
+}
+@media screen and (max-width: 768px) {
+    .politician-card {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .politician-card {
+        width: 25%;
+    }
+}
+
+.politician-photo {
+    max-width: 80%;
+    aspect-ratio: 1/1;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+
+        border-radius: 50%;
+    }
+}
+
+.politician-name {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+
+    margin: 0;
+}
+
+.politician-role {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+
+    margin: 0;
+}

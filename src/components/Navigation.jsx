@@ -6,7 +6,7 @@ function NavBarItem({ icon, label, to, noLabel=false }) {
     if (noLabel) {
         return (
             <li>
-                <NavLink to={to}>
+                <NavLink to={to} end>
                     {({ isActive }) => (
                         <SVGIcon name={icon} alt={label} filled={isActive} />
                     )}
@@ -17,7 +17,7 @@ function NavBarItem({ icon, label, to, noLabel=false }) {
     else {
         return (
             <li>
-                <NavLink to={to}>
+                <NavLink to={to} end>
                     {({ isActive }) => (
                         <>
                             <SVGIcon name={icon} alt={label} filled={isActive} />
@@ -34,7 +34,7 @@ function NavTabItem({ icon=undefined, label, to }) {
     if (icon === undefined) {
         return (
             <li>
-                <NavLink to={to} className={({ isActive }) => isActive ? "active" : ""}>
+                <NavLink to={to} className={({ isActive }) => isActive ? "active" : ""} end>
                     <span className="navbar-item-label">{label}</span>
                 </NavLink>
             </li>
@@ -43,7 +43,7 @@ function NavTabItem({ icon=undefined, label, to }) {
     else {
         return (
             <li>
-                <NavLink to={to} className={({ isActive }) => isActive ? "active" : ""}>
+                <NavLink to={to} className={({ isActive }) => isActive ? "active" : ""} end>
                     <>
                         <SVGIcon name={icon} alt={label} />
                         <span className="navbar-item-label">{label}</span>

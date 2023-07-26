@@ -4,15 +4,15 @@
         justify-content: space-between;
         align-items: center;
 
-        height: 100px;
+        height: 80px;
         padding: 0 20px;
-        background-color: var(--bw-tone-1);
+        background-color: var(--bw-tone-3);
 
         & h1 {
             margin: 0;
             font-size: 2rem;
             line-height: 100px;
-            color: var(--main);
+            color: var(--theme-tone-0);
         }
         
         & ul {
