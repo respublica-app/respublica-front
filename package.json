@@ -54,5 +54,5 @@
     "gh-pages": "^5.0.0",
     "react-router-dom": "^6.14.2"
   },
-  "homepage": "http://respublica-app.github.io/respublica-front"
+  "homepage": "http://respublica-app.github.io/respublica-front/"
 }
