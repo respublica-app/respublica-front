@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/respublica-front/static/css/main.10bf4ab3.css",
-    "main.js": "/respublica-front/static/js/main.d670a1a3.js",
+    "main.js": "/respublica-front/static/js/main.38972f55.js",
     "static/js/787.e4c75fe4.chunk.js": "/respublica-front/static/js/787.e4c75fe4.chunk.js",
     "service-worker.js": "/respublica-front/service-worker.js",
     "index.html": "/respublica-front/index.html",
     "main.10bf4ab3.css.map": "/respublica-front/static/css/main.10bf4ab3.css.map",
-    "main.d670a1a3.js.map": "/respublica-front/static/js/main.d670a1a3.js.map",
+    "main.38972f55.js.map": "/respublica-front/static/js/main.38972f55.js.map",
     "787.e4c75fe4.chunk.js.map": "/respublica-front/static/js/787.e4c75fe4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.10bf4ab3.css",
-    "static/js/main.d670a1a3.js"
+    "static/js/main.38972f55.js"
   ]
 }
