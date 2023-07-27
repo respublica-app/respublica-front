@@ -5,7 +5,7 @@ function Outils() {
   const [outils, setOutils] = useState([]);
 
   useEffect(() => {
-    fetch("/data/outils.json")
+    fetch("./data/outils.json")
       .then((reponse) => reponse.json())
       .then((donnees) => {
         setOutils(donnees.tools);
