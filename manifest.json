@@ -1,0 +1,51 @@
+{
+  "short_name": "res:publica",
+  "name": "res:publica",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "shorcuts": [
+    {
+      "name": "Flux",
+      "short_name": "Flux",
+      "description": "Flux des actualités et lois",
+      "url": "/"
+    },
+    {
+      "name": "Politoscope",
+      "short_name": "Politoscope",
+      "description": "Annuaire des membres des institutions",
+      "url": "/politoscope"
+    },
+    {
+      "name": "Participer",
+      "short_name": "Participer",
+      "description": "Débattez et votez sur les lois",
+      "url": "/participer"
+    },
+    {
+      "name": "Outils",
+      "short_name": "Outils",
+      "description": "Outils et sites pratiques",
+      "url": "/outils"
+    }
+  ],
+  "start_url": ".",
+  "display": "fullscreen",
+  "theme_color": "#002654",
+  "background_color": "#e6f2ff"
+}
