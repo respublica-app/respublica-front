@@ -6,7 +6,13 @@ function Layout() {
     return (
         <>
             <header>
-                <Link to="/"><h1>res:publica</h1></Link>
+                <Link to="/">
+                    <h1>
+                        <span style={{color: "#002654"}}>res</span>
+                        <span style={{color: "white"}}>:</span>
+                        <span style={{color: "#ce1126"}}>publica</span>
+                    </h1>
+                </Link>
                 <ul>
                     <NavBarItem to="/elections" icon="elections" label="Elections" noLabel={true} />
                     <NavBarItem to="/profil" icon="person" label="Profil" noLabel={true} />
