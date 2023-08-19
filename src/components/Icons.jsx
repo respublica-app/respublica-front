@@ -7,7 +7,7 @@ function SVGIcon({ name, alt, filled = false }) {
     useEffect(() => {
         let filename = filled ? name + "_filled" : name;
         // Chargez le code SVG à partir du fichier
-        fetch("./assets/icons/" + filename + ".svg")
+        fetch("../assets/icons/" + filename + ".svg")
         .then((response) => response.text())
         .then((text) => {
             const elmt = document.createElement("div");

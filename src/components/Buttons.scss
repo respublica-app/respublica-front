@@ -13,3 +13,66 @@
     cursor: pointer;
     fill: var(--bw-tone-6);
 }
+
+.button {
+    display: inline-block;
+    text-align: center;
+    padding: unset;
+    border: unset;
+
+    &.tone-2 {
+        color: var(--bw-tone-6);
+        background-color: var(--bw-tone-2);
+        border: 1px solid var(--bw-tone-2);
+    }
+
+    &.tone-3 {
+        color: var(--bw-tone-6);
+        background-color: var(--bw-tone-3);
+        border: 1px solid var(--bw-tone-3);
+    }
+}
+.button:hover {
+    color: var(--bw-tone-7);
+    background-color: var(--bw-tone-3);
+    border: 1px solid var(--bw-tone-3);
+}
+
+.button.text {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.button.info {
+    width: 2rem; height: 2rem; aspect-ratio: 1/1;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+
+    &::after {
+        content: 'i';
+        font-family: none;
+    }
+}
+
+.button.theme {
+    background-color: var(--main);
+    color: #fff;
+    border: 1px solid var(--main);
+    transition: .25s ease-in-out;
+}
+
+.button.theme:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: var(--main);
+}
+
+.button.inline {
+    transform: translateY(-10%);
+}
+
+.button.center {
+    display: block;
+    margin: 0 auto;
+}

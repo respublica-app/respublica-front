@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { CookiesProvider } from 'react-cookie';
+
 import "./App.scss";
 import Layout from "./components/Layout";
 import Feed from "./pages/Feed/Feed";
@@ -10,28 +12,30 @@ import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="*" element={<Layout />}>
-          <Route index element={<Feed />} />
-          <Route path="politoscope" element={<Politoscope />}>
-            <Route index element={<PolitoscopeGouvernement />} />
-            <Route path="assemblee" element={<PolitoscopeAssembleeNationale />} />
-            <Route path="senat" element={<PolitoscopeSenat />} />
-            <Route path="conseil-constitutionnel" element={<PolitoscopeConseilConstitutionnel />} />
-            <Route path="parlement-europeen" element={<PolitoscopeParlementEuropeen />} />
+    <CookiesProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="*" element={<Layout />}>
+            <Route index element={<Feed />} />
+            <Route path="politoscope" element={<Politoscope />}>
+              <Route index element={<PolitoscopeGouvernement />} />
+              <Route path="assemblee" element={<PolitoscopeAssembleeNationale />} />
+              <Route path="senat" element={<PolitoscopeSenat />} />
+              <Route path="conseil-constitutionnel" element={<PolitoscopeConseilConstitutionnel />} />
+              <Route path="parlement-europeen" element={<PolitoscopeParlementEuropeen />} />
+            </Route>
+            <Route path="participer" element={<Participer />}>
+              <Route index element={<ParticiperVotes/>}/>
+              <Route path="debats" element={<ParticiperDebats/>}/>
+            </Route>
+            <Route path="outils" element={<Outils />} />
+            <Route path="elections" element={<Elections />} />
+            <Route path="profil" element={<Profile />} />
+            <Route path="*" element={<h1>404</h1>} />
           </Route>
-          <Route path="participer" element={<Participer />}>
-            <Route index element={<ParticiperVotes/>}/>
-            <Route path="debats" element={<ParticiperDebats/>}/>
-          </Route>
-          <Route path="outils" element={<Outils />} />
-          <Route path="elections" element={<Elections />} />
-          <Route path="profil" element={<Profile />} />
-          <Route path="*" element={<h1>404</h1>} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+    </CookiesProvider>
   );
 }
 
